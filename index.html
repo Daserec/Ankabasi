@@ -51,6 +51,9 @@
                         <a href="#precios" class="nav__link">Precios</a>
                     </li>
                     <li class="nav__item">
+                        <a href="#donde" class="nav__link">Dónde</a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#contacto" class="nav__link">Contacto</a>
                     </li>
                 </ul>
@@ -547,6 +550,82 @@
         </div>
     </section>
 
+    <!-- Sección Donde -->
+    <section class="location" id="donde">
+        <div class="container">
+            <h2 class="section__title" data-aos="fade-up">¿Dónde estamos?</h2>
+            <div class="section__underline" data-aos="fade-up"></div>
+            <p class="section__subtitle" data-aos="fade-up">
+                El punto de encuentro es Aracataca, desde donde comenzamos el viaje hacia Gwimake
+            </p>
+            
+            <div class="location__content" data-aos="fade-up" data-aos-delay="100">
+                <div class="location__info">
+                    <div class="location__item">
+                        <div class="location__icon">📍</div>
+                        <div class="location__details">
+                            <h3 class="location__title">Punto de Partida</h3>
+                            <p class="location__text">Aracataca, Magdalena</p>
+                            <p class="location__description">
+                                Aracataca es el punto de encuentro donde te recogeremos para comenzar 
+                                el viaje hacia Gwimake en la Sierra Nevada de Santa Marta. 
+                                Desde aquí, el transporte se realiza en moto (para 1 persona) 
+                                o camioneta (para 3 o más personas).
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="location__item">
+                        <div class="location__icon">🏔️</div>
+                        <div class="location__details">
+                            <h3 class="location__title">Destino Final</h3>
+                            <p class="location__text">Gwimake, Sierra Nevada de Santa Marta</p>
+                            <p class="location__description">
+                                Gwimake es una comunidad Arhuaca ubicada en el corazón de la Sierra Nevada, 
+                                donde tendrás la oportunidad de vivir una experiencia ancestral única.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="location__map-wrapper">
+                    <!-- Google Maps Embed (no requiere API key) -->
+                    <!-- Para usar Google Maps JavaScript API más adelante, descomenta el script y div#map -->
+                    <!-- 
+                    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=initMap" async defer></script>
+                    <div id="map" class="location__map"></div>
+                    -->
+                    
+                    <iframe 
+                        src="https://www.google.com/maps?q=10.591944,-74.189722&hl=es&z=15&output=embed"
+                        class="location__map"
+                        width="100%"
+                        height="450"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Ubicación de Aracataca, punto de encuentro para Ankabasi">
+                    </iframe>
+                    <!-- 
+                    Nota: El mapa apunta al centro del pueblo de Aracataca usando coordenadas (10.591944, -74.189722)
+                    
+                    Para obtener un iframe más personalizado de Google Maps:
+                    1. Ve a https://www.google.com/maps
+                    2. Busca "Aracataca, Magdalena, Colombia" y haz zoom al centro del pueblo
+                    3. Haz clic en "Compartir" > "Insertar un mapa"
+                    4. Copia el código iframe y reemplaza el de arriba
+                    
+                    Para usar Google Maps JavaScript API (requiere API key):
+                    1. Descomenta el script y div#map en el HTML
+                    2. Agrega tu API key en el script
+                    3. La función initMap() está lista en js/main.js con las coordenadas del centro de Aracataca
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección Contacto -->
     <section class="contact" id="contacto">
         <div class="container">
@@ -662,6 +741,7 @@
                         <li><a href="#actividades">Actividades</a></li>
                         <li><a href="#precios">Precios</a></li>
                         <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#donde">Dónde</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>

@@ -118,6 +118,17 @@
         gap: 1.5rem;
     }
     
+    /* Location Section */
+    .location__info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .location__map,
+    #map {
+        height: 350px;
+    }
+    
     /* Contact Form */
     .form__row {
         grid-template-columns: 1fr;
@@ -199,6 +210,16 @@
     
     .pricing__amount {
         font-size: 2rem;
+    }
+    
+    .location__item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .location__map,
+    #map {
+        height: 300px;
     }
     
     .contact__form {

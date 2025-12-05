@@ -190,6 +190,59 @@ const createBackToTop = () => {
 // Crear botón de volver arriba
 createBackToTop();
 
+// ===== Google Maps API (Para usar cuando se agregue la API key) =====
+/*
+// Descomenta y configura cuando tengas tu API key de Google Maps
+function initMap() {
+    // Coordenadas del centro de Aracataca (pueblo), Magdalena, Colombia
+    const aracataca = { lat: 10.591944, lng: -74.189722 };
+    
+    // Crear el mapa centrado en Aracataca
+    const map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 14,
+        center: aracataca,
+        mapTypeId: 'roadmap',
+        styles: [
+            {
+                featureType: 'poi',
+                elementType: 'labels',
+                stylers: [{ visibility: 'on' }]
+            }
+        ]
+    });
+    
+    // Agregar marcador
+    const marker = new google.maps.Marker({
+        position: aracataca,
+        map: map,
+        title: 'Aracataca - Punto de encuentro para Ankabasi',
+        animation: google.maps.Animation.DROP
+    });
+    
+    // Info window con información
+    const infoWindow = new google.maps.InfoWindow({
+        content: `
+            <div style="padding: 10px;">
+                <h3 style="margin: 0 0 10px 0; color: #2d5016;">Aracataca</h3>
+                <p style="margin: 0; color: #4a4a4a;">
+                    Punto de encuentro para comenzar el viaje hacia Gwimake
+                </p>
+            </div>
+        `
+    });
+    
+    marker.addListener('click', () => {
+        infoWindow.open(map, marker);
+    });
+}
+
+// Para usar esta función:
+// 1. Obtén una API key de Google Maps en: https://console.cloud.google.com/
+// 2. Reemplaza 'TU_API_KEY_AQUI' en el script del HTML con tu API key
+// 3. Descomenta el script y el div#map en index.html
+// 4. Comenta o elimina el iframe de Google Maps
+*/
+
 
 
 
