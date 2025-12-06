@@ -27,7 +27,9 @@
     <header class="header" id="header">
         <nav class="nav container">
             <div class="nav__logo">
-                <a href="#inicio">Ankabasi</a>
+                <a href="#inicio">
+                    <img src="images/logo.png" alt="Ankabasi Logo" class="logo-img">
+                </a>
             </div>
             
             <div class="nav__menu" id="nav-menu">
@@ -42,13 +44,16 @@
                         <a href="#actividades" class="nav__link">Actividades</a>
                     </li>
                     <li class="nav__item">
+                        <a href="#precios" class="nav__link">Precios</a>
+                    </li>
+                    <li class="nav__item">
                         <a href="#galeria" class="nav__link">Galería</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#testimonios" class="nav__link">Testimonios</a>
+                        <a href="#folleto" class="nav__link">Folleto</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#precios" class="nav__link">Precios</a>
+                        <a href="#testimonios" class="nav__link">Testimonios</a>
                     </li>
                     <li class="nav__item">
                         <a href="#donde" class="nav__link">Dónde</a>
@@ -60,6 +65,7 @@
             </div>
             
             <div class="nav__actions">
+                
                 <a href="#contacto" class="btn btn--primary">Reservar ahora</a>
                 <div class="nav__toggle" id="nav-toggle">
                     <span></span>
@@ -82,6 +88,12 @@
                 Bajo las estrellas, escucha historias ancestrales alrededor de la fogata y participa 
                 en un diálogo directo con un líder espiritual.
             </p>
+            <div class="hero__support" data-aos="fade-up" data-aos-delay="200">
+                <p class="hero__support-text">
+                    Con el apoyo de la <strong>Universidad del Magdalena</strong> para apoyar a 
+                    <strong>Asoarhuaco</strong> y el <strong>Cabildo Arhuaco del Magdalena y La Guajira</strong>
+                </p>
+            </div>
             <a href="#contacto" class="btn btn--primary btn--large">Reserva tu Experiencia</a>
         </div>
     </section>
@@ -96,7 +108,7 @@
                 <div class="experience__text">
                     <p>
                         Sumérgete en el corazón de la Sierra Nevada de Santa Marta y comparte la vida 
-                        con la comunidad de Gwimake. Esta no es solo una visita turística; es una invitación 
+                        con la comunidad de <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>. Esta no es solo una visita turística; es una invitación 
                         a desconectarte del mundo moderno y reconectarte con la sabiduría ancestral de la Tierra.
                     </p>
                     <p>
@@ -120,7 +132,7 @@
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="100">
                     <div class="activity__icon">🚗</div>
                     <h3 class="activity__title">Transporte</h3>
-                    <p class="activity__description">Desde Aracataca hasta Gwimake en moto o camioneta</p>
+                    <p class="activity__description">Desde Aracataca hasta <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a> en moto o camioneta</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="200">
@@ -185,6 +197,30 @@
         <div class="container">
             <h2 class="section__title" data-aos="fade-up">Elige tu Experiencia</h2>
             <div class="section__underline" data-aos="fade-up"></div>
+            
+            <!-- Sección de Formas de Pago -->
+            <div class="payment__methods" data-aos="fade-up" data-aos-delay="100">
+                <h3 class="payment__title">Formas de Pago</h3>
+                <div class="payment__grid">
+                    <div class="payment__item">
+                        <div class="payment__icon">💳</div>
+                        <p class="payment__text">Transferencia Bancaria</p>
+                    </div>
+                    <div class="payment__item">
+                        <div class="payment__icon">📱</div>
+                        <p class="payment__text">Nequi</p>
+                    </div>
+                    <div class="payment__item">
+                        <div class="payment__icon">📱</div>
+                        <p class="payment__text">Daviplata</p>
+                    </div>
+                    <div class="payment__item">
+                        <div class="payment__icon">💵</div>
+                        <p class="payment__text">Efectivo</p>
+                    </div>
+                </div>
+                <p class="payment__note">Para más información sobre métodos de pago, contáctanos directamente</p>
+            </div>
             
             <div class="pricing__grid">
                 <!-- Plan 1 Día -->
@@ -493,6 +529,33 @@
         </div>
     </section>
 
+    <!-- Sección Folleto -->
+    <section class="brochure" id="folleto">
+        <div class="container">
+            <h2 class="section__title" data-aos="fade-up">Conoce más sobre Ankabasi</h2>
+            <div class="section__underline" data-aos="fade-up"></div>
+            <p class="section__subtitle" data-aos="fade-up">
+                Descarga nuestro folleto informativo para conocer todos los detalles de la experiencia
+            </p>
+            
+            <div class="brochure__content" data-aos="fade-up" data-aos-delay="100">
+                <div class="brochure__preview">
+                    <div class="brochure__icon">📄</div>
+                    <h3 class="brochure__title">Folleto Informativo</h3>
+                    <p class="brochure__description">
+                        Descarga nuestro folleto completo con información detallada sobre la experiencia, 
+                        actividades, precios y más.
+                    </p>
+                    <a href="Ankabasi folleto.pdf" 
+                       download 
+                       class="btn btn--primary btn--large">
+                        📥 Descargar Folleto
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Sección Testimonios -->
     <section class="testimonials" id="testimonios">
         <div class="container">
@@ -556,7 +619,7 @@
             <h2 class="section__title" data-aos="fade-up">¿Dónde estamos?</h2>
             <div class="section__underline" data-aos="fade-up"></div>
             <p class="section__subtitle" data-aos="fade-up">
-                El punto de encuentro es Aracataca, desde donde comenzamos el viaje hacia Gwimake
+                El punto de encuentro es Aracataca, desde donde comenzamos el viaje hacia <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>
             </p>
             
             <div class="location__content" data-aos="fade-up" data-aos-delay="100">
@@ -568,7 +631,7 @@
                             <p class="location__text">Aracataca, Magdalena</p>
                             <p class="location__description">
                                 Aracataca es el punto de encuentro donde te recogeremos para comenzar 
-                                el viaje hacia Gwimake en la Sierra Nevada de Santa Marta. 
+                                el viaje hacia <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a> en la Sierra Nevada de Santa Marta. 
                                 Desde aquí, el transporte se realiza en moto (para 1 persona) 
                                 o camioneta (para 3 o más personas).
                             </p>
@@ -579,9 +642,9 @@
                         <div class="location__icon">🏔️</div>
                         <div class="location__details">
                             <h3 class="location__title">Destino Final</h3>
-                            <p class="location__text">Gwimake, Sierra Nevada de Santa Marta</p>
+                            <p class="location__text"><a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>, Sierra Nevada de Santa Marta</p>
                             <p class="location__description">
-                                Gwimake es una comunidad Arhuaca ubicada en el corazón de la Sierra Nevada, 
+                                <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a> es una comunidad Arhuaca ubicada en el corazón de la Sierra Nevada, 
                                 donde tendrás la oportunidad de vivir una experiencia ancestral única.
                             </p>
                         </div>
@@ -589,15 +652,9 @@
                 </div>
                 
                 <div class="location__map-wrapper">
-                    <!-- Google Maps Embed (no requiere API key) -->
-                    <!-- Para usar Google Maps JavaScript API más adelante, descomenta el script y div#map -->
-                    <!-- 
-                    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY_AQUI&callback=initMap" async defer></script>
-                    <div id="map" class="location__map"></div>
-                    -->
-                    
-                    <iframe 
-                        src="https://www.google.com/maps?q=10.591944,-74.189722&hl=es&z=15&output=embed"
+                    <!-- Mapa de Gwimake -->
+                    <div class="location__map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4646.288295789986!2d-74.06006062425755!3d10.63665798950371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef50dedd571c8bb%3A0xfaa19f2c09fb39be!2sGwimake!5e1!3m2!1ses!2ses!4v1764967181148!5m2!1ses!2ses"
                         class="location__map"
                         width="100%"
                         height="450"
@@ -605,22 +662,9 @@
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
-                        title="Ubicación de Aracataca, punto de encuentro para Ankabasi">
-                    </iframe>
-                    <!-- 
-                    Nota: El mapa apunta al centro del pueblo de Aracataca usando coordenadas (10.591944, -74.189722)
-                    
-                    Para obtener un iframe más personalizado de Google Maps:
-                    1. Ve a https://www.google.com/maps
-                    2. Busca "Aracataca, Magdalena, Colombia" y haz zoom al centro del pueblo
-                    3. Haz clic en "Compartir" > "Insertar un mapa"
-                    4. Copia el código iframe y reemplaza el de arriba
-                    
-                    Para usar Google Maps JavaScript API (requiere API key):
-                    1. Descomenta el script y div#map en el HTML
-                    2. Agrega tu API key en el script
-                    3. La función initMap() está lista en js/main.js con las coordenadas del centro de Aracataca
-                    -->
+                        title="Ubicación de Gwimake, Sierra Nevada de Santa Marta"></iframe>
+                      
+                    </div>
                 </div>
             </div>
         </div>
@@ -629,60 +673,14 @@
     <!-- Sección Contacto -->
     <section class="contact" id="contacto">
         <div class="container">
-            <h2 class="section__title" data-aos="fade-up">Reserva con Nelo</h2>
+            <h2 class="section__title" data-aos="fade-up">Reserva tu experiencia</h2>
             <p class="section__subtitle" data-aos="fade-up">
                 Disfruta de una experiencia única con la naturaleza
             </p>
             
             <div class="contact__content">
-                <div class="contact__form-wrapper" data-aos="fade-up" data-aos-delay="100">
-                    <form class="contact__form" id="contact-form">
-                        <div class="form__group">
-                            <label for="name" class="form__label">Nombre completo</label>
-                            <input type="text" id="name" name="name" class="form__input" required>
-                        </div>
-                        
-                        <div class="form__group">
-                            <label for="email" class="form__label">Email</label>
-                            <input type="email" id="email" name="email" class="form__input" required>
-                        </div>
-                        
-                        <div class="form__group">
-                            <label for="phone" class="form__label">Teléfono</label>
-                            <input type="tel" id="phone" name="phone" class="form__input" required>
-                        </div>
-                        
-                        <div class="form__row">
-                            <div class="form__group">
-                                <label for="date" class="form__label">Fecha de viaje deseada</label>
-                                <input type="date" id="date" name="date" class="form__input" required>
-                            </div>
-                            
-                            <div class="form__group">
-                                <label for="people" class="form__label">Número de personas</label>
-                                <input type="number" id="people" name="people" class="form__input" min="1" required>
-                            </div>
-                        </div>
-                        
-                        <div class="form__group">
-                            <label for="experience" class="form__label">Tipo de experiencia</label>
-                            <select id="experience" name="experience" class="form__input" required>
-                                <option value="">Selecciona una opción</option>
-                                <option value="1-dia">1 Día / 1 Noche - $700.000</option>
-                                <option value="3-dias">3 Días / 2 Noches - $1.300.000</option>
-                                <option value="1-semana">1 Semana - A consultar</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form__group">
-                            <label for="message" class="form__label">Mensaje</label>
-                            <textarea id="message" name="message" class="form__input form__textarea" rows="5" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn--primary btn--large btn--block">Enviar</button>
-                        
-                        <div class="form__message" id="form-message"></div>
-                    </form>
+                <div class="contact__form-wrapper contact__image-wrapper" data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/gallery/foto5.jpeg" alt="Ankabasi - Experiencia Ancestral" class="contact__image">
                 </div>
                 
                 <div class="contact__info" data-aos="fade-up" data-aos-delay="200">
@@ -697,8 +695,13 @@
                     <div class="contact__item">
                         <div class="contact__icon">📱</div>
                         <div class="contact__details">
-                            <h3 class="contact__title">Teléfono</h3>
-                            <p class="contact__text">+57 310 718 6797</p>
+                            <h3 class="contact__title">Teléfono / WhatsApp</h3>
+                            <a href="https://wa.me/573107186797?text=Hola,%20me%20interesa%20saber%20más%20sobre%20Ankabasi" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="contact__text contact__whatsapp">
+                                +57 310 718 6797
+                            </a>
                         </div>
                     </div>
                     
@@ -706,17 +709,28 @@
                         <div class="contact__icon">📍</div>
                         <div class="contact__details">
                             <h3 class="contact__title">Ubicación</h3>
-                            <p class="contact__text">Gwimake, Sierra Nevada de Santa Marta<br>Colombia</p>
+                            <p class="contact__text"><a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>, Sierra Nevada de Santa Marta<br>Colombia</p>
                         </div>
                     </div>
                     
                     <div class="contact__item">
                         <div class="contact__icon">📷</div>
                         <div class="contact__details">
-                            <h3 class="contact__title">Síguenos</h3>
-                            <a href="#" class="contact__social">@ankabasi</a>
+                            <h3 class="contact__title">Síguenos en Instagram</h3>
+                            <a href="https://www.instagram.com/ankabasi" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               class="contact__social">@ankabasi</a>
                         </div>
                     </div>
+                    
+                    <!-- Botón de WhatsApp flotante -->
+                    <a href="https://wa.me/573107186797?text=Hola,%20me%20interesa%20saber%20más%20sobre%20Ankabasi" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="btn btn--whatsapp btn--large btn--block">
+                        💬 Chatea con nosotros por WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
@@ -741,6 +755,7 @@
                         <li><a href="#actividades">Actividades</a></li>
                         <li><a href="#precios">Precios</a></li>
                         <li><a href="#galeria">Galería</a></li>
+                        <li><a href="#folleto">Folleto</a></li>
                         <li><a href="#donde">Dónde</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
@@ -758,8 +773,15 @@
                 <div class="footer__section">
                     <h4 class="footer__title">Redes sociales</h4>
                     <div class="footer__social">
-                        <a href="#" class="footer__social-link">Instagram</a>
+                        <a href="https://www.instagram.com/ankabasi" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="footer__social-link">Instagram</a>
                     </div>
+                    <a href="https://gwimake.com/" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="footer__social-link">Gwimake</a>
                     <a href="#contacto" class="btn btn--secondary btn--small">Gestionar mi reserva</a>
                 </div>
             </div>
