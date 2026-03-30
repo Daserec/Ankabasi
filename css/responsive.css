@@ -14,7 +14,7 @@
         grid-template-columns: 1fr;
     }
     
-    .hero {
+    .main {
         background-attachment: scroll;
     }
     
@@ -81,12 +81,12 @@
     }
     
     /* Hero */
-    .hero {
+    .main {
         min-height: 90vh;
         padding-top: 70px;
     }
     
-    .hero__content {
+    .main__content {
         padding: 1.5rem;
     }
     
@@ -191,15 +191,15 @@
         font-size: 1rem;
     }
     
-    .hero__title {
+    .main__title {
         font-size: 2rem;
     }
     
-    .hero__subtitle {
+    .main__subtitle {
         font-size: 1.3rem;
     }
     
-    .hero__description {
+    .main__description {
         font-size: 0.95rem;
     }
     
@@ -252,7 +252,7 @@
 
 /* Landscape Mobile */
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    .hero {
+    .main {
         min-height: 100vh;
     }
     
@@ -271,7 +271,7 @@
         display: none;
     }
     
-    .hero {
+    .main {
         min-height: auto;
         padding: 2rem 0;
     }

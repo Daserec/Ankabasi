@@ -12,7 +12,7 @@
     --color-text: #2c2c2c;
     --color-text-light: #4a4a4a;
     --color-white: #ffffff;
-    --color-overlay: rgba(0, 0, 0, 0.4);
+    --color-overlay: rgba(0, 0, 0, 0.2);
     
     /* Tipografía */
     --font-heading: 'Montserrat', sans-serif;
@@ -214,39 +214,50 @@ ul {
 }
 
 /* ===== Hero Section ===== */
-.hero {
+.main {
     position: relative;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #2d5016 0%, #4a7c2a 100%);
-    background-image: url('../images/gallery/foto4.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     padding-top: 70px;
+    overflow: hidden;
 }
 
-.hero__overlay {
+.main__video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.main__overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(45, 80, 22, 0.7) 0%, rgba(74, 124, 42, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(45, 80, 22, 0.35) 0%, rgba(74, 124, 42, 0.05) 100%);
+    z-index: 1;
 }
 
-.hero__content {
+.main__content {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
     color: var(--color-white);
     max-width: 800px;
     padding: 2rem;
 }
 
-.hero__title {
+.main__title {
     font-family: var(--font-heading);
     font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: 700;
@@ -254,7 +265,7 @@ ul {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-.hero__subtitle {
+.main__subtitle {
     font-family: var(--font-heading);
     font-size: clamp(1.5rem, 3vw, 2.5rem);
     font-weight: 600;
@@ -262,14 +273,14 @@ ul {
     color: rgba(255, 255, 255, 0.95);
 }
 
-.hero__description {
+.main__description {
     font-size: clamp(1rem, 2vw, 1.2rem);
     line-height: 1.8;
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.9);
 }
 
-.hero__support {
+.main__support {
     margin-bottom: 2rem;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.15);
@@ -278,14 +289,14 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.hero__support-text {
+.main__support-text {
     font-size: clamp(0.9rem, 1.5vw, 1rem);
     color: rgba(255, 255, 255, 0.95);
     line-height: 1.6;
     margin: 0;
 }
 
-.hero__support-text strong {
+.main__support-text strong {
     color: var(--color-white);
     font-weight: 600;
 }
