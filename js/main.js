@@ -185,6 +185,9 @@ const createBackToTop = () => {
     });
     
     document.body.appendChild(button);
+    if (window.AnkabasiI18n && typeof window.AnkabasiI18n.updateBackToTopAria === 'function') {
+        window.AnkabasiI18n.updateBackToTopAria();
+    }
 };
 
 // Crear botón de volver arriba

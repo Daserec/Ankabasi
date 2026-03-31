@@ -1,4 +1,40 @@
 // ===== Gallery Filter =====
+let galleryLightbox = null;
+
+function getGalleryMoreText() {
+    if (window.AnkabasiI18n && typeof window.AnkabasiI18n.t === 'function') {
+        return window.AnkabasiI18n.t('gallery.moreText');
+    }
+    return 'Ver más';
+}
+
+function initGalleryLightbox() {
+    if (galleryLightbox) {
+        try {
+            if (typeof galleryLightbox.destroy === 'function') {
+                galleryLightbox.destroy();
+            }
+        } catch (e) {}
+        galleryLightbox = null;
+    }
+    galleryLightbox = GLightbox({
+        selector: '.gallery__link',
+        touchNavigation: true,
+        loop: true,
+        autoplayVideos: true,
+        openEffect: 'fade',
+        closeEffect: 'fade',
+        slideEffect: 'slide',
+        moreText: getGalleryMoreText(),
+        moreLength: 60,
+        closeButton: true,
+        touchFollowAxis: true,
+        keyboardNavigation: true,
+        closeOnOutsideClick: true,
+        draggable: true
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const filters = document.querySelectorAll('.gallery__filter');
     const galleryItems = document.querySelectorAll('.gallery__item');
@@ -27,24 +63,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // ===== Initialize GLightbox =====
-    const lightbox = GLightbox({
-        selector: '.gallery__link',
-        touchNavigation: true,
-        loop: true,
-        autoplayVideos: true,
-        openEffect: 'fade',
-        closeEffect: 'fade',
-        slideEffect: 'slide',
-        moreText: 'Ver más',
-        moreLength: 60,
-        closeButton: true,
-        touchFollowAxis: true,
-        keyboardNavigation: true,
-        closeOnOutsideClick: true,
-        draggable: true
-    });
+    initGalleryLightbox();
 });
+
+document.addEventListener('ankabasi:languagechange', initGalleryLightbox);
 
 // ===== Lazy Load Gallery Images =====
 if ('IntersectionObserver' in window) {

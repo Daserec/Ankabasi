@@ -25,7 +25,7 @@
 <body>
     <!-- Header / Navegación -->
     <header class="header" id="header">
-        <nav class="nav container">
+        <nav class="nav">
             <div class="nav__logo">
                 <a href="#inicio">
                     <img src="images/logo.png" alt="Ankabasi Logo" class="logo-img">
@@ -35,38 +35,46 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="#inicio" class="nav__link">Inicio</a>
+                        <a href="#inicio" class="nav__link" data-i18n="nav.inicio">Inicio</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#experiencia" class="nav__link">Experiencia</a>
+                        <a href="#experiencia" class="nav__link" data-i18n="nav.experiencia">Experiencia</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#actividades" class="nav__link">Actividades</a>
+                        <a href="#actividades" class="nav__link" data-i18n="nav.actividades">Actividades</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#precios" class="nav__link">Precios</a>
+                        <a href="#precios" class="nav__link" data-i18n="nav.precios">Precios</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#galeria" class="nav__link">Galería</a>
+                        <a href="#galeria" class="nav__link" data-i18n="nav.galeria">Galería</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#folleto" class="nav__link">Folleto</a>
+                        <a href="#folleto" class="nav__link" data-i18n="nav.folleto">Folleto</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#testimonios" class="nav__link">Testimonios</a>
+                        <a href="#testimonios" class="nav__link" data-i18n="nav.testimonios">Testimonios</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#donde" class="nav__link">Dónde</a>
+                        <a href="#donde" class="nav__link" data-i18n="nav.donde">Dónde</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#contacto" class="nav__link">Contacto</a>
+                        <a href="#contacto" class="nav__link" data-i18n="nav.contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
             
             <div class="nav__actions">
-                
-                <a href="#contacto" class="btn btn--primary">Reservar ahora</a>
+                <a href="#contacto" class="btn btn--primary" data-i18n="nav.reservar">Reservar ahora</a>
+                <div class="lang-switcher">
+                    <label class="sr-only" for="lang-select" data-i18n="a11y.langNav">Idioma</label>
+                    <select id="lang-select" class="lang-switcher__select">
+                        <option value="es">ES</option>
+                        <option value="en">EN</option>
+                        <option value="de">DE</option>
+                        <option value="fr">FR</option>
+                    </select>
+                </div>
                 <div class="nav__toggle" id="nav-toggle">
                     <span></span>
                     <span></span>
@@ -82,21 +90,21 @@
         </video>
         <div class="main__overlay"></div>
         <div class="main__content container" data-aos="fade-up">
-            <h1 class="main__title">Ankabasi</h1>
-            <h2 class="main__subtitle">Una Experiencia Ancestral</h2>
-            <p class="main__description">
+            <h1 class="main__title" data-i18n="main.title">Ankabasi</h1>
+            <h2 class="main__subtitle" data-i18n="main.subtitle">Una Experiencia Ancestral</h2>
+            <p class="main__description" data-i18n="main.description">
                 Sumérgete en el conocimiento Arhuaco: Un diálogo ancestral sobre la Madre Tierra. 
                 Comparte con los jóvenes del lugar mientras exploras sus paisajes y ríos. 
                 Bajo las estrellas, escucha historias ancestrales alrededor de la fogata y participa 
                 en un diálogo directo con un líder espiritual.
             </p>
             <div class="main__support" data-aos="fade-up" data-aos-delay="200">
-                <p class="main__support-text">
+                <p class="main__support-text" data-i18n-html="main.support">
                     Con el apoyo de la <strong>Universidad del Magdalena</strong> para apoyar a 
                     <strong>Asoarhuaco</strong> y el <strong>Cabildo Arhuaco del Magdalena y La Guajira</strong>
                 </p>
             </div>
-            <a href="#contacto" class="btn btn--primary btn--large">Reserva tu Experiencia</a>
+            <a href="#contacto" class="btn btn--primary btn--large" data-i18n="main.cta">Reserva tu Experiencia</a>
         </div>
     </section>
 
@@ -105,21 +113,21 @@
         <div class="experience__overlay"></div>
         <div class="container">
             <div class="experience__content" data-aos="fade-up">
-                <h2 class="section__title">Una Aventura Ancestral</h2>
+                <h2 class="section__title" data-i18n="experience.title">Una Aventura Ancestral</h2>
                 <div class="section__underline"></div>
                 <div class="experience__text">
-                    <p>
+                    <p data-i18n-html="experience.p1">
                         Sumérgete en el corazón de la Sierra Nevada de Santa Marta y comparte la vida 
                         con la comunidad de <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>. Esta no es solo una visita turística; es una invitación 
                         a desconectarte del mundo moderno y reconectarte con la sabiduría ancestral de la Tierra.
                     </p>
-                    <p>
+                    <p data-i18n-html="experience.p2">
                         Aprende sobre la cosmovisión Arhuaca, participa en sus rituales diarios, comparte su comida 
                         y escucha sus historias. Saldrás con una perspectiva renovada y un profundo respeto por una 
                         cultura que protege el corazón del mundo.
                     </p>
                 </div>
-                <a href="#actividades" class="btn btn--secondary">Descubre las Actividades</a>
+                <a href="#actividades" class="btn btn--secondary" data-i18n="experience.cta">Descubre las Actividades</a>
             </div>
         </div>
     </section>
@@ -127,68 +135,68 @@
     <!-- Sección Actividades -->
     <section class="activities" id="actividades">
         <div class="container">
-            <h2 class="section__title" data-aos="fade-up">¿Qué incluye tu experiencia?</h2>
+            <h2 class="section__title" data-aos="fade-up" data-i18n="activities.title">¿Qué incluye tu experiencia?</h2>
             <div class="section__underline" data-aos="fade-up"></div>
             
             <div class="activities__grid">
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="100">
                     <div class="activity__icon">🚗</div>
-                    <h3 class="activity__title">Transporte</h3>
-                    <p class="activity__description">Desde Aracataca hasta <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a> en moto o camioneta</p>
+                    <h3 class="activity__title" data-i18n="activities.transport_t">Transporte</h3>
+                    <p class="activity__description" data-i18n-html="activities.transport_d">Desde Aracataca hasta <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a> en moto o camioneta</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="200">
                     <div class="activity__icon">🧘</div>
-                    <h3 class="activity__title">Trabajo Espiritual</h3>
-                    <p class="activity__description">Con el mamo, líder espiritual de la comunidad</p>
+                    <h3 class="activity__title" data-i18n="activities.spiritual_t">Trabajo Espiritual</h3>
+                    <p class="activity__description" data-i18n="activities.spiritual_d">Con el mamo, líder espiritual de la comunidad</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="300">
                     <div class="activity__icon">🍽️</div>
-                    <h3 class="activity__title">Alimentación Completa</h3>
-                    <p class="activity__description">Durante toda tu estadía</p>
+                    <h3 class="activity__title" data-i18n="activities.food_t">Alimentación Completa</h3>
+                    <p class="activity__description" data-i18n="activities.food_d">Durante toda tu estadía</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="400">
                     <div class="activity__icon">🛏️</div>
-                    <h3 class="activity__title">Alojamiento</h3>
-                    <p class="activity__description">En hamaca o bohío tradicional</p>
+                    <h3 class="activity__title" data-i18n="activities.lodging_t">Alojamiento</h3>
+                    <p class="activity__description" data-i18n="activities.lodging_d">En hamaca o bohío tradicional</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="500">
                     <div class="activity__icon">👣</div>
-                    <h3 class="activity__title">Caminatas</h3>
-                    <p class="activity__description">Explora la naturaleza y cascadas</p>
+                    <h3 class="activity__title" data-i18n="activities.walks_t">Caminatas</h3>
+                    <p class="activity__description" data-i18n="activities.walks_d">Explora la naturaleza y cascadas</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="600">
                     <div class="activity__icon">🗣️</div>
-                    <h3 class="activity__title">Charlas Nocturnas</h3>
-                    <p class="activity__description">Con toque arhuaco de acordeón</p>
+                    <h3 class="activity__title" data-i18n="activities.talks_t">Charlas Nocturnas</h3>
+                    <p class="activity__description" data-i18n="activities.talks_d">Con toque arhuaco de acordeón</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="700">
                     <div class="activity__icon">🧵</div>
-                    <h3 class="activity__title">Hilos de Protección</h3>
-                    <p class="activity__description">Entrega de hilos sagrados arhuacos</p>
+                    <h3 class="activity__title" data-i18n="activities.threads_t">Hilos de Protección</h3>
+                    <p class="activity__description" data-i18n="activities.threads_d">Entrega de hilos sagrados arhuacos</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="800">
                     <div class="activity__icon">🎨</div>
-                    <h3 class="activity__title">Talleres de Artesanía</h3>
-                    <p class="activity__description">Aprende técnicas tradicionales</p>
+                    <h3 class="activity__title" data-i18n="activities.craft_t">Talleres de Artesanía</h3>
+                    <p class="activity__description" data-i18n="activities.craft_d">Aprende técnicas tradicionales</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="900">
                     <div class="activity__icon">🌱</div>
-                    <h3 class="activity__title">Siembra de Plantas</h3>
-                    <p class="activity__description">Alimenticias o medicinales</p>
+                    <h3 class="activity__title" data-i18n="activities.planting_t">Siembra de Plantas</h3>
+                    <p class="activity__description" data-i18n="activities.planting_d">Alimenticias o medicinales</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="1000">
                     <div class="activity__icon">👨‍🏫</div>
-                    <h3 class="activity__title">Guía Turístico</h3>
-                    <p class="activity__description">Servicio de guía durante tu estadía</p>
+                    <h3 class="activity__title" data-i18n="activities.guide_t">Guía Turístico</h3>
+                    <p class="activity__description" data-i18n="activities.guide_d">Servicio de guía durante tu estadía</p>
                 </div>
             </div>
         </div>
@@ -197,92 +205,92 @@
     <!-- Sección Precios -->
     <section class="pricing" id="precios">
         <div class="container">
-            <h2 class="section__title" data-aos="fade-up">Elige tu Experiencia</h2>
+            <h2 class="section__title" data-aos="fade-up" data-i18n="pricing.title">Elige tu Experiencia</h2>
             <div class="section__underline" data-aos="fade-up"></div>
             
             <!-- Sección de Formas de Pago -->
             <div class="payment__methods" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="payment__title">Formas de Pago</h3>
+                <h3 class="payment__title" data-i18n="pricing.paymentTitle">Formas de Pago</h3>
                 <div class="payment__grid">
                     <div class="payment__item">
                         <div class="payment__icon">💳</div>
-                        <p class="payment__text">Transferencia Bancaria</p>
+                        <p class="payment__text" data-i18n="pricing.payment_bank">Transferencia Bancaria</p>
                     </div>
                     <div class="payment__item">
                         <div class="payment__icon">📱</div>
-                        <p class="payment__text">Nequi</p>
+                        <p class="payment__text" data-i18n="pricing.payment_nequi">Nequi</p>
                     </div>
                     <div class="payment__item">
                         <div class="payment__icon">📱</div>
-                        <p class="payment__text">Daviplata</p>
+                        <p class="payment__text" data-i18n="pricing.payment_daviplata">Daviplata</p>
                     </div>
                     <div class="payment__item">
                         <div class="payment__icon">💵</div>
-                        <p class="payment__text">Efectivo</p>
+                        <p class="payment__text" data-i18n="pricing.payment_cash">Efectivo</p>
                     </div>
                 </div>
-                <p class="payment__note">Para más información sobre métodos de pago, contáctanos directamente</p>
+                <p class="payment__note" data-i18n="pricing.paymentNote">Para más información sobre métodos de pago, contáctanos directamente</p>
             </div>
             
             <div class="pricing__grid">
                 <!-- Plan 1 Día -->
                 <div class="pricing__card" data-aos="fade-up" data-aos-delay="100">
                     <div class="pricing__header">
-                        <h3 class="pricing__title">1 Día / 1 Noche</h3>
+                        <h3 class="pricing__title" data-i18n="pricing.plan1_t">1 Día / 1 Noche</h3>
                         <div class="pricing__price">
-                            <span class="pricing__currency">Desde</span>
+                            <span class="pricing__currency" data-i18n="pricing.from">Desde</span>
                             <span class="pricing__amount">$700.000</span>
                         </div>
                     </div>
                     <ul class="pricing__features">
-                        <li>✓ Transporte desde Aracataca</li>
-                        <li>✓ Alimentación completa</li>
-                        <li>✓ Alojamiento en hamaca</li>
-                        <li>✓ Caminata a la cascada (10 min)</li>
-                        <li>✓ Charla nocturna con música arhuaca</li>
-                        <li>✓ Trabajo espiritual con el mamo</li>
-                        <li>✓ Entrega de hilos de protección</li>
+                        <li data-i18n="pricing.plan1_f1">✓ Transporte desde Aracataca</li>
+                        <li data-i18n="pricing.plan1_f2">✓ Alimentación completa</li>
+                        <li data-i18n="pricing.plan1_f3">✓ Alojamiento en hamaca</li>
+                        <li data-i18n="pricing.plan1_f4">✓ Caminata a la cascada (10 min)</li>
+                        <li data-i18n="pricing.plan1_f5">✓ Charla nocturna con música arhuaca</li>
+                        <li data-i18n="pricing.plan1_f6">✓ Trabajo espiritual con el mamo</li>
+                        <li data-i18n="pricing.plan1_f7">✓ Entrega de hilos de protección</li>
                     </ul>
-                    <a href="#contacto" class="btn btn--primary btn--block">Reservar ahora</a>
+                    <a href="#contacto" class="btn btn--primary btn--block" data-i18n="nav.reservar">Reservar ahora</a>
                 </div>
                 
                 <!-- Plan 3 Días -->
                 <div class="pricing__card pricing__card--featured" data-aos="fade-up" data-aos-delay="200">
-                    <div class="pricing__badge">Popular</div>
+                    <div class="pricing__badge" data-i18n="pricing.popular">Popular</div>
                     <div class="pricing__header">
-                        <h3 class="pricing__title">3 Días / 2 Noches</h3>
+                        <h3 class="pricing__title" data-i18n="pricing.plan2_t">3 Días / 2 Noches</h3>
                         <div class="pricing__price">
-                            <span class="pricing__currency">Desde</span>
+                            <span class="pricing__currency" data-i18n="pricing.from">Desde</span>
                             <span class="pricing__amount">$1.300.000</span>
                         </div>
                     </div>
                     <ul class="pricing__features">
-                        <li>✓ Todo lo del plan 1 día, más:</li>
-                        <li>✓ Talleres de artesanía</li>
-                        <li>✓ Siembra de plantas alimenticias o medicinales</li>
-                        <li>✓ Una mochila arhuaca como obsequio especial</li>
-                        <li>✓ Más tiempo para inmersión cultural</li>
+                        <li data-i18n="pricing.plan2_f0">✓ Todo lo del plan 1 día, más:</li>
+                        <li data-i18n="pricing.plan2_f1">✓ Talleres de artesanía</li>
+                        <li data-i18n="pricing.plan2_f2">✓ Siembra de plantas alimenticias o medicinales</li>
+                        <li data-i18n="pricing.plan2_f3">✓ Una mochila arhuaca como obsequio especial</li>
+                        <li data-i18n="pricing.plan2_f4">✓ Más tiempo para inmersión cultural</li>
                     </ul>
-                    <a href="#contacto" class="btn btn--primary btn--block">Reservar ahora</a>
+                    <a href="#contacto" class="btn btn--primary btn--block" data-i18n="nav.reservar">Reservar ahora</a>
                 </div>
                 
                 <!-- Plan 1 Semana -->
                 <div class="pricing__card" data-aos="fade-up" data-aos-delay="300">
                     <div class="pricing__header">
-                        <h3 class="pricing__title">1 Semana</h3>
+                        <h3 class="pricing__title" data-i18n="pricing.plan3_t">1 Semana</h3>
                         <div class="pricing__price">
-                            <span class="pricing__currency">Precio</span>
-                            <span class="pricing__amount">A consultar</span>
+                            <span class="pricing__currency" data-i18n="pricing.price">Precio</span>
+                            <span class="pricing__amount" data-i18n="pricing.ask">A consultar</span>
                         </div>
                     </div>
                     <ul class="pricing__features">
-                        <li>✓ Experiencia extendida</li>
-                        <li>✓ Inmersión profunda en la cultura Arhuaca</li>
-                        <li>✓ Múltiples actividades y talleres</li>
-                        <li>✓ Tiempo para conexión profunda</li>
-                        <li>✓ Contacto personalizado</li>
+                        <li data-i18n="pricing.plan3_f1">✓ Experiencia extendida</li>
+                        <li data-i18n="pricing.plan3_f2">✓ Inmersión profunda en la cultura Arhuaca</li>
+                        <li data-i18n="pricing.plan3_f3">✓ Múltiples actividades y talleres</li>
+                        <li data-i18n="pricing.plan3_f4">✓ Tiempo para conexión profunda</li>
+                        <li data-i18n="pricing.plan3_f5">✓ Contacto personalizado</li>
                     </ul>
-                    <a href="#contacto" class="btn btn--secondary btn--block">Consultar precio</a>
+                    <a href="#contacto" class="btn btn--secondary btn--block" data-i18n="pricing.consult">Consultar precio</a>
                 </div>
             </div>
         </div>
@@ -291,15 +299,15 @@
     <!-- Sección Galería -->
     <section class="gallery" id="galeria">
         <div class="container">
-            <h2 class="section__title" data-aos="fade-up">Explora lugares increíbles</h2>
-            <p class="section__subtitle" data-aos="fade-up">
+            <h2 class="section__title" data-aos="fade-up" data-i18n="gallery.title">Explora lugares increíbles</h2>
+            <p class="section__subtitle" data-aos="fade-up" data-i18n="gallery.subtitle">
                 Momentos, historias y sabiduría compartida desde el corazón del mundo
             </p>
             
             <div class="gallery__filters" data-aos="fade-up">
-                <button class="gallery__filter active" data-filter="all">Todos</button>
-                <button class="gallery__filter" data-filter="photos">Fotos</button>
-                <button class="gallery__filter" data-filter="videos">Videos</button>
+                <button class="gallery__filter active" data-filter="all" data-i18n="gallery.filter_all">Todos</button>
+                <button class="gallery__filter" data-filter="photos" data-i18n="gallery.filter_photos">Fotos</button>
+                <button class="gallery__filter" data-filter="videos" data-i18n="gallery.filter_videos">Videos</button>
             </div>
             
             <div class="gallery__grid" id="gallery-grid">
@@ -534,23 +542,24 @@
     <!-- Sección Folleto -->
     <section class="brochure" id="folleto">
         <div class="container">
-            <h2 class="section__title" data-aos="fade-up">Conoce más sobre Ankabasi</h2>
+            <h2 class="section__title" data-aos="fade-up" data-i18n="brochure.title">Conoce más sobre Ankabasi</h2>
             <div class="section__underline" data-aos="fade-up"></div>
-            <p class="section__subtitle" data-aos="fade-up">
+            <p class="section__subtitle" data-aos="fade-up" data-i18n="brochure.subtitle">
                 Descarga nuestro folleto informativo para conocer todos los detalles de la experiencia
             </p>
             
             <div class="brochure__content" data-aos="fade-up" data-aos-delay="100">
                 <div class="brochure__preview">
                     <div class="brochure__icon">📄</div>
-                    <h3 class="brochure__title">Folleto Informativo</h3>
-                    <p class="brochure__description">
+                    <h3 class="brochure__title" data-i18n="brochure.cardTitle">Folleto Informativo</h3>
+                    <p class="brochure__description" data-i18n="brochure.cardDesc">
                         Descarga nuestro folleto completo con información detallada sobre la experiencia, 
                         actividades, precios y más.
                     </p>
                     <a href="Ankabasi folleto.pdf" 
                        download 
-                       class="btn btn--primary btn--large">
+                       class="btn btn--primary btn--large"
+                       data-i18n="brochure.download">
                         📥 Descargar Folleto
                     </a>
                 </div>
@@ -561,13 +570,13 @@
     <!-- Sección Testimonios -->
     <section class="testimonials" id="testimonios">
         <div class="container">
-            <h2 class="section__title" data-aos="fade-up">Experiencias de nuestros visitantes</h2>
+            <h2 class="section__title" data-aos="fade-up" data-i18n="testimonials.title">Experiencias de nuestros visitantes</h2>
             <div class="section__underline" data-aos="fade-up"></div>
             
             <div class="testimonials__grid">
                 <div class="testimonial__card" data-aos="fade-up" data-aos-delay="100">
                     <div class="testimonial__stars">★★★★★</div>
-                    <p class="testimonial__text">
+                    <p class="testimonial__text" data-i18n="testimonials.t1">
                         "Una experiencia que cambió mi perspectiva sobre la vida y la naturaleza. 
                         Conectar con los Arhuacos fue profundamente transformador."
                     </p>
@@ -582,7 +591,7 @@
                 
                 <div class="testimonial__card" data-aos="fade-up" data-aos-delay="200">
                     <div class="testimonial__stars">★★★★★</div>
-                    <p class="testimonial__text">
+                    <p class="testimonial__text" data-i18n="testimonials.t2">
                         "La Sierra Nevada es mágica, y esta experiencia la hizo aún más especial. 
                         El trabajo espiritual con el mamo fue increíble."
                     </p>
@@ -597,7 +606,7 @@
                 
                 <div class="testimonial__card" data-aos="fade-up" data-aos-delay="300">
                     <div class="testimonial__stars">★★★★★</div>
-                    <p class="testimonial__text">
+                    <p class="testimonial__text" data-i18n="testimonials.t3">
                         "Recomiendo esta experiencia a cualquiera que busque autenticidad. 
                         Los talleres de artesanía y las charlas nocturnas fueron inolvidables."
                     </p>
@@ -618,9 +627,9 @@
     <!-- Sección Donde -->
     <section class="location" id="donde">
         <div class="container">
-            <h2 class="section__title" data-aos="fade-up">¿Dónde estamos?</h2>
+            <h2 class="section__title" data-aos="fade-up" data-i18n="location.title">¿Dónde estamos?</h2>
             <div class="section__underline" data-aos="fade-up"></div>
-            <p class="section__subtitle" data-aos="fade-up">
+            <p class="section__subtitle" data-aos="fade-up" data-i18n-html="location.subtitle">
                 El punto de encuentro es Aracataca, desde donde comenzamos el viaje hacia <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>
             </p>
             
@@ -629,9 +638,9 @@
                     <div class="location__item">
                         <div class="location__icon">📍</div>
                         <div class="location__details">
-                            <h3 class="location__title">Punto de Partida</h3>
-                            <p class="location__text">Aracataca, Magdalena</p>
-                            <p class="location__description">
+                            <h3 class="location__title" data-i18n="location.meeting_t">Punto de Partida</h3>
+                            <p class="location__text" data-i18n="location.meeting_line">Aracataca, Magdalena</p>
+                            <p class="location__description" data-i18n-html="location.meeting_d">
                                 Aracataca es el punto de encuentro donde te recogeremos para comenzar 
                                 el viaje hacia <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a> en la Sierra Nevada de Santa Marta. 
                                 Desde aquí, el transporte se realiza en moto (para 1 persona) 
@@ -643,9 +652,9 @@
                     <div class="location__item">
                         <div class="location__icon">🏔️</div>
                         <div class="location__details">
-                            <h3 class="location__title">Destino Final</h3>
-                            <p class="location__text"><a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>, Sierra Nevada de Santa Marta</p>
-                            <p class="location__description">
+                            <h3 class="location__title" data-i18n="location.dest_t">Destino Final</h3>
+                            <p class="location__text" data-i18n-html="location.dest_line"><a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>, Sierra Nevada de Santa Marta</p>
+                            <p class="location__description" data-i18n-html="location.dest_d">
                                 <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a> es una comunidad Arhuaca ubicada en el corazón de la Sierra Nevada, 
                                 donde tendrás la oportunidad de vivir una experiencia ancestral única.
                             </p>
@@ -664,6 +673,7 @@
                         allowfullscreen=""
                         loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"
+                        data-i18n-title="location.mapTitle"
                         title="Ubicación de Gwimake, Sierra Nevada de Santa Marta"></iframe>
                       
                     </div>
@@ -675,8 +685,8 @@
     <!-- Sección Contacto -->
     <section class="contact" id="contacto">
         <div class="container">
-            <h2 class="section__title" data-aos="fade-up">Reserva tu experiencia</h2>
-            <p class="section__subtitle" data-aos="fade-up">
+            <h2 class="section__title" data-aos="fade-up" data-i18n="contact.title">Reserva tu experiencia</h2>
+            <p class="section__subtitle" data-aos="fade-up" data-i18n="contact.subtitle">
                 Disfruta de una experiencia única con la naturaleza
             </p>
             
@@ -689,7 +699,7 @@
                     <div class="contact__item">
                         <div class="contact__icon">📧</div>
                         <div class="contact__details">
-                            <h3 class="contact__title">Email</h3>
+                            <h3 class="contact__title" data-i18n="contact.email">Email</h3>
                             <p class="contact__text">info@ankabasi.com</p>
                         </div>
                     </div>
@@ -697,11 +707,13 @@
                     <div class="contact__item">
                         <div class="contact__icon">📱</div>
                         <div class="contact__details">
-                            <h3 class="contact__title">Teléfono / WhatsApp</h3>
+                            <h3 class="contact__title" data-i18n="contact.phone">Teléfono / WhatsApp</h3>
                             <a href="https://wa.me/573107186797?text=Hola,%20me%20interesa%20saber%20más%20sobre%20Ankabasi" 
                                target="_blank" 
                                rel="noopener noreferrer" 
-                               class="contact__text contact__whatsapp">
+                               class="contact__text contact__whatsapp"
+                               data-i18n-wa
+                               data-wa-base="https://wa.me/573107186797">
                                +57 310 553 3470
                             </a>
                         </div>
@@ -710,15 +722,15 @@
                     <div class="contact__item">
                         <div class="contact__icon">📍</div>
                         <div class="contact__details">
-                            <h3 class="contact__title">Ubicación</h3>
-                            <p class="contact__text"><a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>, Sierra Nevada de Santa Marta<br>Colombia</p>
+                            <h3 class="contact__title" data-i18n="contact.location">Ubicación</h3>
+                            <p class="contact__text" data-i18n-html="contact.location_html"><a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>, Sierra Nevada de Santa Marta<br>Colombia</p>
                         </div>
                     </div>
                     
                     <div class="contact__item">
                         <div class="contact__icon">📷</div>
                         <div class="contact__details">
-                            <h3 class="contact__title">Síguenos en Instagram</h3>
+                            <h3 class="contact__title" data-i18n="contact.instagram">Síguenos en Instagram</h3>
                             <a href="https://www.instagram.com/ankabasi" 
                                target="_blank" 
                                rel="noopener noreferrer" 
@@ -730,7 +742,10 @@
                     <a href="https://wa.me/573107186797?text=Hola,%20me%20interesa%20saber%20más%20sobre%20Ankabasi" 
                        target="_blank" 
                        rel="noopener noreferrer" 
-                       class="btn btn--whatsapp btn--large btn--block">
+                       class="btn btn--whatsapp btn--large btn--block"
+                       data-i18n-wa
+                       data-wa-base="https://wa.me/573107186797"
+                       data-i18n="contact.whatsappBtn">
                         💬 Chatea con nosotros por WhatsApp
                     </a>
                 </div>
@@ -744,27 +759,27 @@
             <div class="footer__content">
                 <div class="footer__section">
                     <h3 class="footer__logo">Ankabasi</h3>
-                    <p class="footer__description">
+                    <p class="footer__description" data-i18n="footer.tagline">
                         Una experiencia ancestral con los Arhuacos en la Sierra Nevada de Santa Marta
                     </p>
                 </div>
                 
                 <div class="footer__section">
-                    <h4 class="footer__title">Enlaces rápidos</h4>
+                    <h4 class="footer__title" data-i18n="footer.quick">Enlaces rápidos</h4>
                     <ul class="footer__links">
-                        <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#experiencia">Experiencia</a></li>
-                        <li><a href="#actividades">Actividades</a></li>
-                        <li><a href="#precios">Precios</a></li>
-                        <li><a href="#galeria">Galería</a></li>
-                        <li><a href="#folleto">Folleto</a></li>
-                        <li><a href="#donde">Dónde</a></li>
-                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#inicio" data-i18n="nav.inicio">Inicio</a></li>
+                        <li><a href="#experiencia" data-i18n="nav.experiencia">Experiencia</a></li>
+                        <li><a href="#actividades" data-i18n="nav.actividades">Actividades</a></li>
+                        <li><a href="#precios" data-i18n="nav.precios">Precios</a></li>
+                        <li><a href="#galeria" data-i18n="nav.galeria">Galería</a></li>
+                        <li><a href="#folleto" data-i18n="nav.folleto">Folleto</a></li>
+                        <li><a href="#donde" data-i18n="nav.donde">Dónde</a></li>
+                        <li><a href="#contacto" data-i18n="nav.contacto">Contacto</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer__section">
-                    <h4 class="footer__title">Contacto</h4>
+                    <h4 class="footer__title" data-i18n="footer.contact">Contacto</h4>
                     <ul class="footer__links">
                         <li>📧 contacto@ankabasi.com</li>
                         <li>📱 +57 (310) 718-6797</li>
@@ -773,7 +788,7 @@
                 </div>
                 
                 <div class="footer__section">
-                    <h4 class="footer__title">Redes sociales</h4>
+                    <h4 class="footer__title" data-i18n="footer.social">Redes sociales</h4>
                     <div class="footer__social">
                         <a href="https://www.instagram.com/ankabasi" 
                            target="_blank" 
@@ -784,12 +799,12 @@
                        target="_blank" 
                        rel="noopener noreferrer" 
                        class="footer__social-link">Gwimake</a>
-                    <a href="#contacto" class="btn btn--secondary btn--small">Gestionar mi reserva</a>
+                    <a href="#contacto" class="btn btn--secondary btn--small" data-i18n="footer.manage">Gestionar mi reserva</a>
                 </div>
             </div>
             
             <div class="footer__bottom">
-                <p>&copy; 2024 Ankabasi. Todos los derechos reservados.</p>
+                <p data-i18n="footer.copy">&copy; 2026 Ankabasi. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -797,6 +812,7 @@
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
     <script src="js/gallery.js"></script>
     <script src="js/contact.js"></script>
