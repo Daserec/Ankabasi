@@ -46,6 +46,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 }, 2000);
             }, 1500);
         });
+
+        // ===== Validación en tiempo real =====
+        const inputs = contactForm.querySelectorAll('input, textarea, select');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                validateField(this);
+            });
+            
+            input.addEventListener('input', function() {
+                if (this.classList.contains('error')) {
+                    validateField(this);
+                }
+            });
+        });
     }
     
     // ===== Validación de formulario =====
@@ -111,20 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
         // Scroll al mensaje
         formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }
-    
-    // ===== Validación en tiempo real =====
-    const inputs = contactForm.querySelectorAll('input, textarea, select');
-    inputs.forEach(input => {
-        input.addEventListener('blur', function() {
-            validateField(this);
-        });
-        
-        input.addEventListener('input', function() {
-            if (this.classList.contains('error')) {
-                validateField(this);
-            }
-        });
-    });
     
     function validateField(field) {
         const value = field.value.trim();

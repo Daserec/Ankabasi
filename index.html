@@ -18,6 +18,9 @@
     <!-- GLightbox -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
     
+    <!-- Font Awesome Icons (sin SRI para evitar bloqueo por hash distinto) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -85,7 +88,16 @@
     </header>
 
     <section class="main" id="inicio">
-        <video class="main__video" autoplay muted loop playsinline aria-hidden="true">
+        <video 
+            class="main__video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline 
+            aria-hidden="true"
+            preload="metadata"
+            poster="images/hero/main-background-poster.jpg">
+            <source src="videos/main-background.webm" type="video/webm">
             <source src="videos/main-background.mp4" type="video/mp4">
         </video>
         <div class="main__overlay"></div>
@@ -140,61 +152,61 @@
             
             <div class="activities__grid">
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="activity__icon">🚗</div>
+                    <div class="activity__icon"><i class="fa-solid fa-car"></i></div>
                     <h3 class="activity__title" data-i18n="activities.transport_t">Transporte</h3>
                     <p class="activity__description" data-i18n-html="activities.transport_d">Desde Aracataca hasta <a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a> en moto o camioneta</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="activity__icon">🧘</div>
+                    <div class="activity__icon"><i class="fa-solid fa-spa"></i></div>
                     <h3 class="activity__title" data-i18n="activities.spiritual_t">Trabajo Espiritual</h3>
                     <p class="activity__description" data-i18n="activities.spiritual_d">Con el mamo, líder espiritual de la comunidad</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="activity__icon">🍽️</div>
+                    <div class="activity__icon"><i class="fa-solid fa-utensils"></i></div>
                     <h3 class="activity__title" data-i18n="activities.food_t">Alimentación Completa</h3>
                     <p class="activity__description" data-i18n="activities.food_d">Durante toda tu estadía</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="activity__icon">🛏️</div>
+                    <div class="activity__icon"><i class="fa-solid fa-bed"></i></div>
                     <h3 class="activity__title" data-i18n="activities.lodging_t">Alojamiento</h3>
                     <p class="activity__description" data-i18n="activities.lodging_d">En hamaca o bohío tradicional</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="activity__icon">👣</div>
+                    <div class="activity__icon"><i class="fa-solid fa-person-hiking"></i></div>
                     <h3 class="activity__title" data-i18n="activities.walks_t">Caminatas</h3>
                     <p class="activity__description" data-i18n="activities.walks_d">Explora la naturaleza y cascadas</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="activity__icon">🗣️</div>
+                    <div class="activity__icon"><i class="fa-solid fa-comments"></i></div>
                     <h3 class="activity__title" data-i18n="activities.talks_t">Charlas Nocturnas</h3>
                     <p class="activity__description" data-i18n="activities.talks_d">Con toque arhuaco de acordeón</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="700">
-                    <div class="activity__icon">🧵</div>
+                    <div class="activity__icon"><i class="fa-solid fa-thread"></i></div>
                     <h3 class="activity__title" data-i18n="activities.threads_t">Hilos de Protección</h3>
                     <p class="activity__description" data-i18n="activities.threads_d">Entrega de hilos sagrados arhuacos</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="800">
-                    <div class="activity__icon">🎨</div>
+                    <div class="activity__icon"><i class="fa-solid fa-palette"></i></div>
                     <h3 class="activity__title" data-i18n="activities.craft_t">Talleres de Artesanía</h3>
                     <p class="activity__description" data-i18n="activities.craft_d">Aprende técnicas tradicionales</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="900">
-                    <div class="activity__icon">🌱</div>
+                    <div class="activity__icon"><i class="fa-solid fa-seedling"></i></div>
                     <h3 class="activity__title" data-i18n="activities.planting_t">Siembra de Plantas</h3>
                     <p class="activity__description" data-i18n="activities.planting_d">Alimenticias o medicinales</p>
                 </div>
                 
                 <div class="activity__card" data-aos="fade-up" data-aos-delay="1000">
-                    <div class="activity__icon">👨‍🏫</div>
+                    <div class="activity__icon"><i class="fa-solid fa-person-circle-question"></i></div>
                     <h3 class="activity__title" data-i18n="activities.guide_t">Guía Turístico</h3>
                     <p class="activity__description" data-i18n="activities.guide_d">Servicio de guía durante tu estadía</p>
                 </div>
@@ -697,7 +709,7 @@
                 
                 <div class="contact__info" data-aos="fade-up" data-aos-delay="200">
                     <div class="contact__item">
-                        <div class="contact__icon">📧</div>
+                        <div class="contact__icon"><i class="fa-solid fa-envelope-open-text"></i></div>
                         <div class="contact__details">
                             <h3 class="contact__title" data-i18n="contact.email">Email</h3>
                             <p class="contact__text">info@ankabasi.com</p>
@@ -705,7 +717,7 @@
                     </div>
                     
                     <div class="contact__item">
-                        <div class="contact__icon">📱</div>
+                        <div class="contact__icon"><i class="fa-brands fa-whatsapp"></i></div>
                         <div class="contact__details">
                             <h3 class="contact__title" data-i18n="contact.phone">Teléfono / WhatsApp</h3>
                             <a href="https://wa.me/573107186797?text=Hola,%20me%20interesa%20saber%20más%20sobre%20Ankabasi" 
@@ -720,7 +732,7 @@
                     </div>
                     
                     <div class="contact__item">
-                        <div class="contact__icon">📍</div>
+                        <div class="contact__icon"><i class="fa-solid fa-location-dot"></i></div>
                         <div class="contact__details">
                             <h3 class="contact__title" data-i18n="contact.location">Ubicación</h3>
                             <p class="contact__text" data-i18n-html="contact.location_html"><a href="https://gwimake.com/" target="_blank" rel="noopener noreferrer"><strong>Gwimake</strong></a>, Sierra Nevada de Santa Marta<br>Colombia</p>
@@ -728,7 +740,7 @@
                     </div>
                     
                     <div class="contact__item">
-                        <div class="contact__icon">📷</div>
+                        <div class="contact__icon"><i class="fa-brands fa-instagram"></i></div>
                         <div class="contact__details">
                             <h3 class="contact__title" data-i18n="contact.instagram">Síguenos en Instagram</h3>
                             <a href="https://www.instagram.com/ankabasi" 
@@ -746,7 +758,7 @@
                        data-i18n-wa
                        data-wa-base="https://wa.me/573107186797"
                        data-i18n="contact.whatsappBtn">
-                        💬 Chatea con nosotros por WhatsApp
+                        <i class="fa-brands fa-whatsapp"></i> Chatea con nosotros por WhatsApp
                     </a>
                 </div>
             </div>
@@ -781,9 +793,9 @@
                 <div class="footer__section">
                     <h4 class="footer__title" data-i18n="footer.contact">Contacto</h4>
                     <ul class="footer__links">
-                        <li>📧 contacto@ankabasi.com</li>
-                        <li>📱 +57 (310) 718-6797</li>
-                        <li>📍 Sierra Nevada de Santa Marta, Colombia</li>
+                        <li><i class="fa-solid fa-envelope-open-text footer__icon"></i> contacto@ankabasi.com</li>
+                        <li><i class="fa-brands fa-whatsapp footer__icon"></i> +57 (310) 718-6797</li>
+                        <li><i class="fa-solid fa-location-dot footer__icon"></i> Sierra Nevada de Santa Marta, Colombia</li>
                     </ul>
                 </div>
                 

@@ -385,7 +385,7 @@ ul {
     z-index: 2;
     text-align: center;
     color: var(--color-white);
-    max-width: 800px;
+    max-width: 1000px;
     padding: 2rem;
 }
 
@@ -416,7 +416,7 @@ ul {
     margin-bottom: 2rem;
     padding: 1rem;
     background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(10px);
+
     border-radius: var(--border-radius);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -506,16 +506,28 @@ ul {
     background-color: var(--color-bg);
 }
 
+.activities .container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 .activities__grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 2rem;
     margin-top: 3rem;
+    align-items: stretch;
+}
+
+@media screen and (min-width: 1024px) {
+    .activities__grid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
 }
 
 .activity__card {
     background-color: var(--color-bg);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: var(--border-radius);
     text-align: center;
     box-shadow: var(--shadow-sm);
@@ -530,8 +542,8 @@ ul {
 }
 
 .activity__icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
 }
 
 .activity__title {
@@ -1020,7 +1032,8 @@ ul {
 
 .contact__content {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.4fr 1.1fr;
+    align-items: stretch;
     gap: 3rem;
     margin-top: 3rem;
 }
@@ -1037,7 +1050,7 @@ ul {
     border-radius: var(--border-radius);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
-    min-height: 400px;
+    min-height: 420px;
 }
 
 .contact__image {
@@ -1117,18 +1130,29 @@ ul {
 .contact__info {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.75rem;
+    align-self: center;
 }
 
 .contact__item {
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-bg-lighter);
 }
 
 .contact__icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
     flex-shrink: 0;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 999px;
+    background-color: rgba(45, 80, 22, 0.08);
 }
 
 .contact__title {
@@ -1167,6 +1191,10 @@ ul {
     background-color: #25D366;
     color: var(--color-white);
     margin-top: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
 }
 
 .btn--whatsapp:hover {
@@ -1187,6 +1215,7 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
+    align-items: flex-start;
 }
 
 .footer__logo {
@@ -1208,6 +1237,9 @@ ul {
 
 .footer__links li {
     margin-bottom: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .footer__links a {
@@ -1233,6 +1265,17 @@ ul {
 
 .footer__social-link:hover {
     color: var(--color-white);
+}
+
+.footer__section:last-child .btn {
+    margin-top: 0.75rem;
+}
+
+.footer__icon {
+    font-size: 0.95rem;
+    width: 1.4rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .footer__bottom {
